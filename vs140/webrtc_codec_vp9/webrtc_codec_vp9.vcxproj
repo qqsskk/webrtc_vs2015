@@ -106,6 +106,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(webrtc_root)\third_party\libvpx;..\..;$(webrtc_root);$(webrtc_root)\third_party\jsoncpp\include;$(webrtc_root)\third_party\expat\x86-windows-cl14\include;$(webrtc_root)\third_party\libyuv\x86-windows-cl14\include;$(webrtc_root)\third_party\DirectX\DirectShow\BaseClasses;$(webrtc_root)\third_party\openssl\x86-windows-cl14\include;$(webrtc_root)\third_party\librtmp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -137,6 +138,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(webrtc_root)\third_party\libvpx;..\..;$(webrtc_root);$(webrtc_root)\third_party\jsoncpp\include;$(webrtc_root)\third_party\expat\x86-windows-cl14\include;$(webrtc_root)\third_party\libyuv\x86-windows-cl14\include;$(webrtc_root)\third_party\DirectX\DirectShow\BaseClasses;$(webrtc_root)\third_party\openssl\x86-windows-cl14\include;$(webrtc_root)\third_party\librtmp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

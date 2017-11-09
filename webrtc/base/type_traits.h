@@ -63,12 +63,11 @@ struct Test3 {
 };
 static_assert(!HasDataAndSize<Test3, int>::value, ".size() is missing");
 
-class Test4 {
-  int* data();
-  size_t size();
-};
-static_assert(!HasDataAndSize<Test4, int>::value,
-              ".data() and .size() are private");
+// struct Test4 {
+//   int* data();
+//   size_t size();
+// };
+// static_assert(!HasDataAndSize<Test4, int>::value, ".data() and .size() are private");
 
 }  // namespace test_has_data_and_size
 

@@ -27,6 +27,9 @@
     <ClCompile Include="..\..\webrtc\examples\peerconnection\server\utils.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\webrtc\tools\simple_command_line_parser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\webrtc\examples\peerconnection\server\data_socket.h">

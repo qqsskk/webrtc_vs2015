@@ -120,11 +120,13 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)$(Configuration);$(webrtc_root)\third_party\DirectX\DirectShow\BaseClasses\lib;$(webrtc_root)\third_party\libyuv\x86-windows-cl14\lib;$(webrtc_root)\third_party\ffmpeg\x86-windows-cl14\bin;$(webrtc_root)\third_party\openssl\x86-windows-cl14\lib;$(webrtc_root)\third_party\libvpx\x86-windows-cl14\lib;$(webrtc_root)\third_party\libsrtp\x86-windows-cl14\lib;$(webrtc_root)\third_party\openh264\x86-windows-cl14\lib;$(webrtc_root)\third_party\opus\x86-windows-cl14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>webrtc.lib;webrtc_base.lib;libyuvd.lib;Jsoncpp.lib;ws2_32.lib;winmm.lib;Secur32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -153,13 +155,15 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)$(Configuration);$(webrtc_root)\third_party\DirectX\DirectShow\BaseClasses\lib;$(webrtc_root)\third_party\libyuv\x86-windows-cl14\lib;$(webrtc_root)\third_party\ffmpeg\x86-windows-cl14\bin;$(webrtc_root)\third_party\openssl\x86-windows-cl14\lib;$(webrtc_root)\third_party\libvpx\x86-windows-cl14\lib;$(webrtc_root)\third_party\libsrtp\x86-windows-cl14\lib;$(webrtc_root)\third_party\openh264\x86-windows-cl14\lib;$(webrtc_root)\third_party\opus\x86-windows-cl14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>webrtc.lib;webrtc_base.lib;libyuv.lib;Jsoncpp.lib;ws2_32.lib;winmm.lib;Secur32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
