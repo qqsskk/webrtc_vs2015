@@ -6,3 +6,5 @@ WebRTC for Windows.
 WebRTC projects.
 
 You need to add third party libraries by yourself, eg: ffmpeg.
+
+by yuqingtong
